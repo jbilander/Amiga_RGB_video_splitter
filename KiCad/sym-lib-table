@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Amiga_RGB_video_splitter)(type Legacy)(uri ${KIPRJMOD}/Amiga_RGB_video_splitter.lib)(options "")(descr ""))
+)

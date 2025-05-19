@@ -1,0 +1,128 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EB341E8
+P 1600 2500
+F 0 "#FLG0101" H 1600 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 2673 50  0000 C CNN
+F 2 "" H 1600 2500 50  0001 C CNN
+F 3 "~" H 1600 2500 50  0001 C CNN
+	1    1600 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 2400 1600 2500
+$Comp
+L power:GND #PWR0102
+U 1 1 5EB362B9
+P 1900 2500
+F 0 "#PWR0102" H 1900 2250 50  0001 C CNN
+F 1 "GND" H 1905 2327 50  0000 C CNN
+F 2 "" H 1900 2500 50  0001 C CNN
+F 3 "" H 1900 2500 50  0001 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EB368E6
+P 1900 2400
+F 0 "#FLG0102" H 1900 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 2573 50  0000 C CNN
+F 2 "" H 1900 2400 50  0001 C CNN
+F 3 "~" H 1900 2400 50  0001 C CNN
+	1    1900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2400 1900 2500
+Text GLabel 1900 2450 0    50   Input ~ 0
+GND
+Text GLabel 1600 2450 0    50   Input ~ 0
+3V3
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 644304C8
+P 1600 2400
+F 0 "#PWR0101" H 1600 2250 50  0001 C CNN
+F 1 "+3V3" H 1615 2573 50  0000 C CNN
+F 2 "" H 1600 2400 50  0001 C CNN
+F 3 "" H 1600 2400 50  0001 C CNN
+	1    1600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 6831C83A
+P 1150 2400
+F 0 "#PWR0103" H 1150 2250 50  0001 C CNN
+F 1 "+5V" H 1165 2573 50  0000 C CNN
+F 2 "" H 1150 2400 50  0001 C CNN
+F 3 "" H 1150 2400 50  0001 C CNN
+	1    1150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 6831D4B4
+P 1150 2500
+F 0 "#FLG0103" H 1150 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1150 2673 50  0000 C CNN
+F 2 "" H 1150 2500 50  0001 C CNN
+F 3 "~" H 1150 2500 50  0001 C CNN
+	1    1150 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 2400 1150 2500
+Text GLabel 1150 2450 0    50   Input ~ 0
+VCC
+$Comp
+L Amiga_RGB_video_splitter:DB23_Female-Connector J2
+U 1 1 682F1F1B
+P 3500 2400
+F 0 "J2" V 3817 2288 50  0000 C CNN
+F 1 "DB23_Female-Connector" V 3726 2288 50  0000 C CNN
+F 2 "Amiga_RGB_video_splitter:DSUB-23_Female_EdgeMount_P2.77mm" H 3500 2200 50  0001 C CNN
+F 3 "" H 3500 2200 50  0001 C CNN
+	1    3500 2400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3600 3000 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3200 2700 3200 3000
+Wire Wire Line
+	3200 3000 3400 3000
+Wire Wire Line
+	4000 3000 4000 2700
+Wire Wire Line
+	3800 2700 3800 3000
+Connection ~ 3800 3000
+Wire Wire Line
+	3800 3000 4000 3000
+Wire Wire Line
+	3600 2700 3600 3000
+Connection ~ 3600 3000
+Wire Wire Line
+	3600 3000 3800 3000
+Wire Wire Line
+	3400 2700 3400 3000
+Connection ~ 3400 3000
+Wire Wire Line
+	3400 3000 3600 3000
+$EndSCHEMATC
