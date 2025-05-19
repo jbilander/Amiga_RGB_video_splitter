@@ -138,4 +138,22 @@ F 3 " ~" H 2050 4850 50  0001 C CNN
 $EndComp
 Text GLabel 3700 4450 2    50   Input ~ 0
 GND
+$Comp
+L Amiga_RGB_video_splitter:KMDGX-9S-BS-1 J3
+U 1 1 6830CC46
+P 4900 3850
+F 0 "J3" H 4900 4365 50  0000 C CNN
+F 1 "KMDGX-9S-BS-1" H 4900 4274 50  0000 C CNN
+F 2 "Amiga_RGB_video_splitter:KMDGX9SBS1" H 4650 4250 50  0001 L CNN
+F 3 "https://www.kycon.com/Pub_Eng_Draw/KMDGX-9S-BS-1.pdf" H 5200 4100 50  0001 L CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 4100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5350 3900 5350 4000
+Wire Wire Line
+	5350 4000 5350 4100
+Connection ~ 5350 4000
 $EndSCHEMATC
