@@ -92,10 +92,10 @@ Wire Wire Line
 Text GLabel 1150 2450 0    50   Input ~ 0
 VCC
 $Comp
-L Amiga_RGB_video_splitter:DB23_Female-Connector J2
+L Amiga_RGB_video_splitter:DB23_Female-Connector J1
 U 1 1 682F1F1B
 P 3500 2400
-F 0 "J2" V 3817 2288 50  0000 C CNN
+F 0 "J1" V 3817 2288 50  0000 C CNN
 F 1 "DB23_Female-Connector" V 3726 2288 50  0000 C CNN
 F 2 "Amiga_RGB_video_splitter:DSUB-23_Female_EdgeMount_P2.77mm" H 3500 2200 50  0001 C CNN
 F 3 "" H 3500 2200 50  0001 C CNN
@@ -125,4 +125,17 @@ Wire Wire Line
 Connection ~ 3400 3000
 Wire Wire Line
 	3400 3000 3600 3000
+$Comp
+L Connector:DB15_Female_HighDensity_MountingHoles J2
+U 1 1 683028A2
+P 3000 4450
+F 0 "J2" V 3046 5179 50  0000 L CNN
+F 1 "DB15_Female_HighDensity_MountingHoles" V 2955 5179 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 2050 4850 50  0001 C CNN
+F 3 " ~" H 2050 4850 50  0001 C CNN
+	1    3000 4450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3700 4450 2    50   Input ~ 0
+GND
 $EndSCHEMATC
