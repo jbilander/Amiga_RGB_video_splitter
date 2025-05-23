@@ -102,68 +102,58 @@ F 3 "" H 3500 2200 50  0001 C CNN
 	1    3500 2400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3600 3000 3    50   Input ~ 0
+Text GLabel 3600 3100 3    50   Input ~ 0
 GND
 Wire Wire Line
-	3200 2700 3200 3000
+	3200 3100 3400 3100
+Connection ~ 3800 3100
 Wire Wire Line
-	3200 3000 3400 3000
+	3800 3100 4000 3100
+Connection ~ 3600 3100
 Wire Wire Line
-	4000 3000 4000 2700
+	3600 3100 3800 3100
+Connection ~ 3400 3100
 Wire Wire Line
-	3800 2700 3800 3000
-Connection ~ 3800 3000
-Wire Wire Line
-	3800 3000 4000 3000
-Wire Wire Line
-	3600 2700 3600 3000
-Connection ~ 3600 3000
-Wire Wire Line
-	3600 3000 3800 3000
-Wire Wire Line
-	3400 2700 3400 3000
-Connection ~ 3400 3000
-Wire Wire Line
-	3400 3000 3600 3000
+	3400 3100 3600 3100
 $Comp
 L Connector:DB15_Female_HighDensity_MountingHoles J2
 U 1 1 683028A2
-P 3000 4450
-F 0 "J2" V 3046 5179 50  0000 L CNN
-F 1 "DB15_Female_HighDensity_MountingHoles" V 2955 5179 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 2050 4850 50  0001 C CNN
-F 3 " ~" H 2050 4850 50  0001 C CNN
-	1    3000 4450
+P 3250 5300
+F 0 "J2" V 3296 6029 50  0000 L CNN
+F 1 "DB15_Female_HighDensity_MountingHoles" V 3205 6029 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 2300 5700 50  0001 C CNN
+F 3 " ~" H 2300 5700 50  0001 C CNN
+	1    3250 5300
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3700 4450 2    50   Input ~ 0
+Text GLabel 3950 5300 2    50   Input ~ 0
 GND
 $Comp
 L Amiga_RGB_video_splitter:KMDGX-9S-BS-1 J3
 U 1 1 6830CC46
-P 4900 3850
-F 0 "J3" H 4900 4365 50  0000 C CNN
-F 1 "KMDGX-9S-BS-1" H 4900 4274 50  0000 C CNN
-F 2 "Amiga_RGB_video_splitter:KMDGX9SBS1" H 4650 4250 50  0001 L CNN
-F 3 "https://www.kycon.com/Pub_Eng_Draw/KMDGX-9S-BS-1.pdf" H 5200 4100 50  0001 L CNN
-	1    4900 3850
+P 5200 3850
+F 0 "J3" H 5200 4365 50  0000 C CNN
+F 1 "KMDGX-9S-BS-1" H 5200 4274 50  0000 C CNN
+F 2 "Amiga_RGB_video_splitter:KMDGX9SBS1" H 4950 4250 50  0001 L CNN
+F 3 "https://www.kycon.com/Pub_Eng_Draw/KMDGX-9S-BS-1.pdf" H 5500 4100 50  0001 L CNN
+	1    5200 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5350 4100 2    50   Input ~ 0
+Text GLabel 5650 4100 2    50   Input ~ 0
 GND
 Wire Wire Line
-	5350 3900 5350 4000
+	5650 3900 5650 4000
 Wire Wire Line
-	5350 4000 5350 4100
-Connection ~ 5350 4000
+	5650 4000 5650 4100
+Connection ~ 5650 4000
 Text GLabel 4600 2700 3    50   Input ~ 0
 VCC
 Text GLabel 2900 2700 3    50   Input ~ 0
-RED
+AMIGA_R
 Text GLabel 3100 2700 3    50   Input ~ 0
-GREEN
+AMIGA_G
 Text GLabel 3300 2700 3    50   Input ~ 0
-BLUE
+AMIGA_B
 Text GLabel 2500 2700 3    50   Input ~ 0
 XCLK
 Text GLabel 2700 2700 3    50   Input ~ 0
@@ -186,27 +176,21 @@ Text GLabel 4500 2700 3    50   Input ~ 0
 HSYNC
 Text GLabel 4700 2700 3    50   Input ~ 0
 VSYNC
-Text GLabel 5350 3600 2    50   Input ~ 0
+Text GLabel 5650 3600 2    50   Input ~ 0
 RED
-Text GLabel 4450 3800 0    50   Input ~ 0
+Text GLabel 4750 3800 0    50   Input ~ 0
 GREEN
-Text GLabel 4450 3600 0    50   Input ~ 0
+Text GLabel 4750 3600 0    50   Input ~ 0
 BLUE
-Text GLabel 4450 3700 0    50   Input ~ 0
+Text GLabel 4750 3700 0    50   Input ~ 0
 VCC
 Wire Wire Line
-	4450 3900 4000 3900
-Wire Wire Line
-	4000 3900 4000 3200
-Wire Wire Line
-	4000 3200 4300 3200
-Wire Wire Line
-	4300 2700 4300 3200
-NoConn ~ 4450 4000
-NoConn ~ 4450 4100
-Text GLabel 5350 3800 2    50   Input ~ 0
+	4750 3900 4300 3900
+NoConn ~ 4750 4000
+NoConn ~ 4750 4100
+Text GLabel 5650 3800 2    50   Input ~ 0
 AUDIO_R
-Text GLabel 5350 3700 2    50   Input ~ 0
+Text GLabel 5650 3700 2    50   Input ~ 0
 AUDIO_L
 $Comp
 L Amiga_RGB_video_splitter:PJ-320A J4
@@ -226,4 +210,64 @@ AUDIO_R
 Text GLabel 1650 3550 2    50   Input ~ 0
 GND
 NoConn ~ 1650 3700
+Wire Wire Line
+	4300 2700 4300 3900
+$Comp
+L Amiga_RGB_video_splitter:THS7374IPWR U1
+U 1 1 683153B1
+P 3100 4050
+F 0 "U1" H 3100 4615 50  0000 C CNN
+F 1 "THS7374IPWR" H 3100 4524 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3650 4450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ths7374.pdf" H 3650 4350 50  0001 L CNN
+	1    3100 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 4150 0    50   Input ~ 0
+GND
+Text GLabel 3800 3950 2    50   Output ~ 0
+RED
+Text GLabel 3800 3850 2    50   Output ~ 0
+GREEN
+Wire Wire Line
+	2400 4050 2400 4150
+NoConn ~ 3800 4050
+Wire Wire Line
+	3600 2700 3600 3100
+Wire Wire Line
+	3200 2700 3200 3100
+Wire Wire Line
+	3400 2700 3400 3100
+Wire Wire Line
+	3800 2700 3800 3100
+Wire Wire Line
+	4000 2700 4000 3100
+Text GLabel 3800 3750 2    50   Output ~ 0
+BLUE
+Text GLabel 2400 3850 0    50   Input ~ 0
+AMIGA_G
+Text GLabel 2400 3950 0    50   Input ~ 0
+AMIGA_R
+Text GLabel 2400 3750 0    50   Input ~ 0
+AMIGA_B
+Text GLabel 2850 5600 3    50   Input ~ 0
+RED
+Text GLabel 3050 5600 3    50   Input ~ 0
+GREEN
+Text GLabel 3250 5600 3    50   Input ~ 0
+BLUE
+Text GLabel 2750 5600 3    50   Input ~ 0
+GND
+Text GLabel 2950 5600 3    50   Input ~ 0
+GND
+Text GLabel 3150 5600 3    50   Input ~ 0
+GND
+Text GLabel 3250 5000 1    50   Input ~ 0
+HSYNC
+Text GLabel 3450 5000 1    50   Input ~ 0
+VSYNC
+Text GLabel 3550 5600 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3550 5600 3650 5600
 $EndSCHEMATC
