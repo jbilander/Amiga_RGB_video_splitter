@@ -249,11 +249,11 @@ AMIGA_R
 Text GLabel 2400 3750 0    50   Input ~ 0
 AMIGA_B
 Text GLabel 2850 5600 3    50   Input ~ 0
-RED
+VGA_R
 Text GLabel 3050 5600 3    50   Input ~ 0
-GREEN
+VGA_G
 Text GLabel 3250 5600 3    50   Input ~ 0
-BLUE
+VGA_B
 Text GLabel 2750 5600 3    50   Input ~ 0
 GND
 Text GLabel 2950 5600 3    50   Input ~ 0
@@ -270,26 +270,24 @@ Wire Wire Line
 	3550 5600 3650 5600
 NoConn ~ 2400 4350
 NoConn ~ 3800 4350
-Text GLabel 4150 4150 2    50   Input ~ 0
+Text GLabel 4350 4150 2    50   Input ~ 0
 VCC
 $Comp
 L Device:C_Small C2
 U 1 1 6832D346
-P 3950 4250
-F 0 "C2" H 4042 4296 50  0000 L CNN
-F 1 "0.1uF" H 4042 4205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3950 4250 50  0001 C CNN
-F 3 "~" H 3950 4250 50  0001 C CNN
-	1    3950 4250
+P 4150 4250
+F 0 "C2" H 4242 4296 50  0000 L CNN
+F 1 "0.1uF" H 4242 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4150 4250 50  0001 C CNN
+F 3 "~" H 4150 4250 50  0001 C CNN
+	1    4150 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 4350 3    50   Input ~ 0
+Text GLabel 4150 4350 3    50   Input ~ 0
 GND
+Connection ~ 4150 4150
 Wire Wire Line
-	3800 4150 3950 4150
-Connection ~ 3950 4150
-Wire Wire Line
-	3950 4150 4150 4150
+	4150 4150 4350 4150
 NoConn ~ 3450 5600
 NoConn ~ 2850 5000
 NoConn ~ 3050 5000
@@ -338,4 +336,36 @@ NoConn ~ 1300 4350
 NoConn ~ 1300 4750
 Text Label 4300 3600 2    50   ~ 0
 CSYNC
+Wire Wire Line
+	2400 4250 2400 4150
+Connection ~ 2400 4150
+Text GLabel 3950 4250 3    50   Input ~ 0
+BYPASS
+Wire Wire Line
+	3800 4150 4150 4150
+Wire Wire Line
+	3800 4250 3950 4250
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 68354B66
+P 4950 4800
+F 0 "RN2" H 5138 4846 50  0000 L CNN
+F 1 "R_Pack04 75 Ω" H 5138 4755 50  0000 L CNN
+F 2 "Amiga_RGB_video_splitter:RESCAF80P320X160X60-8N" V 5225 4800 50  0001 C CNN
+F 3 "~" H 4950 4800 50  0001 C CNN
+	1    4950 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 4600 1    50   Input ~ 0
+BLUE
+Text GLabel 4850 4600 1    50   Input ~ 0
+GREEN
+Text GLabel 4950 4600 1    50   Input ~ 0
+RED
+Text GLabel 4750 5000 3    50   Output ~ 0
+VGA_B
+Text GLabel 4850 5000 3    50   Output ~ 0
+VGA_G
+Text GLabel 4950 5000 3    50   Output ~ 0
+VGA_R
 $EndSCHEMATC
