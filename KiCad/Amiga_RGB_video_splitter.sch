@@ -156,4 +156,74 @@ Wire Wire Line
 Wire Wire Line
 	5350 4000 5350 4100
 Connection ~ 5350 4000
+Text GLabel 4600 2700 3    50   Input ~ 0
+VCC
+Text GLabel 2900 2700 3    50   Input ~ 0
+RED
+Text GLabel 3100 2700 3    50   Input ~ 0
+GREEN
+Text GLabel 3300 2700 3    50   Input ~ 0
+BLUE
+Text GLabel 2500 2700 3    50   Input ~ 0
+XCLK
+Text GLabel 2700 2700 3    50   Input ~ 0
+XCLKEN
+NoConn ~ 2600 2700
+NoConn ~ 2800 2700
+NoConn ~ 3000 2700
+NoConn ~ 3500 2700
+NoConn ~ 3700 2700
+NoConn ~ 3900 2700
+NoConn ~ 4100 2700
+NoConn ~ 4200 2700
+Text Label 4300 3000 1    50   ~ 0
+CSYNC
+Wire Wire Line
+	4400 2700 4400 3000
+Text Label 4400 3000 1    50   ~ 0
++12V
+Text GLabel 4500 2700 3    50   Input ~ 0
+HSYNC
+Text GLabel 4700 2700 3    50   Input ~ 0
+VSYNC
+Text GLabel 5350 3600 2    50   Input ~ 0
+RED
+Text GLabel 4450 3800 0    50   Input ~ 0
+GREEN
+Text GLabel 4450 3600 0    50   Input ~ 0
+BLUE
+Text GLabel 4450 3700 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	4450 3900 4000 3900
+Wire Wire Line
+	4000 3900 4000 3200
+Wire Wire Line
+	4000 3200 4300 3200
+Wire Wire Line
+	4300 2700 4300 3200
+NoConn ~ 4450 4000
+NoConn ~ 4450 4100
+Text GLabel 5350 3800 2    50   Input ~ 0
+AUDIO_R
+Text GLabel 5350 3700 2    50   Input ~ 0
+AUDIO_L
+$Comp
+L Amiga_RGB_video_splitter:PJ-320A J4
+U 1 1 68306894
+P 1550 3850
+F 0 "J4" H 1404 4665 50  0000 C CNN
+F 1 "PJ-320A" H 1404 4574 50  0000 C CNN
+F 2 "Amiga_RGB_video_splitter:PJ-320A" H 1550 3850 50  0001 C CNN
+F 3 "" H 1550 3850 50  0001 C CNN
+	1    1550 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 3250 2    50   Input ~ 0
+AUDIO_L
+Text GLabel 1650 3400 2    50   Input ~ 0
+AUDIO_R
+Text GLabel 1650 3550 2    50   Input ~ 0
+GND
+NoConn ~ 1650 3700
 $EndSCHEMATC
