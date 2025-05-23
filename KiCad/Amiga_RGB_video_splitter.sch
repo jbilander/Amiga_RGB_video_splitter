@@ -167,7 +167,7 @@ NoConn ~ 3900 2700
 NoConn ~ 4100 2700
 NoConn ~ 4200 2700
 Text Label 4300 3000 1    50   ~ 0
-CSYNC
+CSYNK
 Wire Wire Line
 	4400 2700 4400 3000
 Text Label 4400 3000 1    50   ~ 0
@@ -296,10 +296,10 @@ NoConn ~ 3050 5000
 NoConn ~ 3650 5000
 NoConn ~ 3350 5600
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 68333376
 P 4300 3350
-F 0 "R?" H 4359 3396 50  0000 L CNN
+F 0 "R1" H 4359 3396 50  0000 L CNN
 F 1 "R_Small" H 4359 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 4300 3350 50  0001 C CNN
 F 3 "~" H 4300 3350 50  0001 C CNN
@@ -311,4 +311,31 @@ Wire Wire Line
 	4300 2700 4300 3250
 Wire Wire Line
 	4300 3900 4300 3450
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 68337CD7
+P 1300 4550
+F 0 "RN1" H 1488 4596 50  0000 L CNN
+F 1 "R_Pack04 75 Ω" H 1488 4505 50  0000 L CNN
+F 2 "Amiga_RGB_video_splitter:RESCAF80P320X160X60-8N" V 1575 4550 50  0001 C CNN
+F 3 "~" H 1300 4550 50  0001 C CNN
+	1    1300 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 4350 1    50   Input ~ 0
+AMIGA_B
+Text GLabel 1100 4750 3    50   Input ~ 0
+AMIGA_G
+Text GLabel 1400 4750 3    50   Input ~ 0
+AMIGA_R
+Text GLabel 1400 4350 1    50   Input ~ 0
+GND
+Text GLabel 1200 4750 3    50   Input ~ 0
+GND
+Text GLabel 1100 4350 1    50   Input ~ 0
+GND
+NoConn ~ 1300 4350
+NoConn ~ 1300 4750
+Text Label 4300 3600 2    50   ~ 0
+CSYNC
 $EndSCHEMATC
