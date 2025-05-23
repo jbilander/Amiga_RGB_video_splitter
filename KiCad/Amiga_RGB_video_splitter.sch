@@ -210,8 +210,6 @@ AUDIO_R
 Text GLabel 1650 3550 2    50   Input ~ 0
 GND
 NoConn ~ 1650 3700
-Wire Wire Line
-	4300 2700 4300 3900
 $Comp
 L Amiga_RGB_video_splitter:THS7374IPWR U1
 U 1 1 683153B1
@@ -270,4 +268,47 @@ Text GLabel 3550 5600 3    50   Input ~ 0
 GND
 Wire Wire Line
 	3550 5600 3650 5600
+NoConn ~ 2400 4350
+NoConn ~ 3800 4350
+Text GLabel 4150 4150 2    50   Input ~ 0
+VCC
+$Comp
+L Device:C_Small C2
+U 1 1 6832D346
+P 3950 4250
+F 0 "C2" H 4042 4296 50  0000 L CNN
+F 1 "0.1uF" H 4042 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3950 4250 50  0001 C CNN
+F 3 "~" H 3950 4250 50  0001 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 4350 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3800 4150 3950 4150
+Connection ~ 3950 4150
+Wire Wire Line
+	3950 4150 4150 4150
+NoConn ~ 3450 5600
+NoConn ~ 2850 5000
+NoConn ~ 3050 5000
+NoConn ~ 3650 5000
+NoConn ~ 3350 5600
+$Comp
+L Device:R_Small R?
+U 1 1 68333376
+P 4300 3350
+F 0 "R?" H 4359 3396 50  0000 L CNN
+F 1 "R_Small" H 4359 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 4300 3350 50  0001 C CNN
+F 3 "~" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4400 2700
+Wire Wire Line
+	4300 2700 4300 3250
+Wire Wire Line
+	4300 3900 4300 3450
 $EndSCHEMATC
