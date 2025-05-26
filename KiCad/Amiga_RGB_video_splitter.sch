@@ -146,7 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4000 5650 4100
 Connection ~ 5650 4000
-Text GLabel 4600 2700 3    50   Input ~ 0
+Text GLabel 4600 2950 3    50   Input ~ 0
 VCC
 Text GLabel 2900 2700 3    50   Input ~ 0
 AMIGA_R
@@ -410,15 +410,37 @@ VSYNK
 Wire Wire Line
 	6650 2700 7100 2700
 Wire Wire Line
-	4500 2700 4500 3050
-Wire Wire Line
-	4500 3050 5250 3050
-Wire Wire Line
-	5250 3050 5250 2900
-Wire Wire Line
 	5250 2900 5750 2900
 Text Label 5250 2900 0    50   ~ 0
 HSYNK
 NoConn ~ 5050 4600
 NoConn ~ 5050 5000
+$Comp
+L Device:CP_Small C1
+U 1 1 6834FAFC
+P 4800 2850
+F 0 "C1" V 4700 2750 50  0000 C CNN
+F 1 "100uF Radial Pitch_2.5mm" V 4600 2450 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4800 2850 50  0001 C CNN
+F 3 "~" H 4800 2850 50  0001 C CNN
+	1    4800 2850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4950 2850 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4950 2850 4900 2850
+Wire Wire Line
+	4500 3200 5250 3200
+Wire Wire Line
+	5250 2900 5250 3200
+Wire Wire Line
+	4500 2700 4500 3200
+Wire Wire Line
+	4600 2700 4600 2850
+Wire Wire Line
+	4700 2850 4600 2850
+Connection ~ 4600 2850
+Wire Wire Line
+	4600 2850 4600 2950
 $EndSCHEMATC
