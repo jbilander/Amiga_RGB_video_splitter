@@ -172,9 +172,9 @@ Wire Wire Line
 	4400 2700 4400 3000
 Text Label 4400 3000 1    50   ~ 0
 +12V
-Text GLabel 4500 2700 3    50   Input ~ 0
+Text GLabel 6650 2900 2    50   Output ~ 0
 HSYNC
-Text GLabel 4700 2700 3    50   Input ~ 0
+Text GLabel 6650 2500 2    50   Output ~ 0
 VSYNC
 Text GLabel 5650 3600 2    50   Input ~ 0
 RED
@@ -368,4 +368,55 @@ Text GLabel 4850 5000 3    50   Output ~ 0
 VGA_G
 Text GLabel 4950 5000 3    50   Output ~ 0
 VGA_R
+$Comp
+L Amiga_RGB_video_splitter:74HCT2G17 U2
+U 1 1 68346213
+P 6200 2700
+F 0 "U2" H 6200 3215 50  0000 C CNN
+F 1 "74HCT2G17" H 6200 3124 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 6700 3650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf" H 6700 3650 50  0001 C CNN
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 2700 0    50   Input ~ 0
+GND
+Text GLabel 7300 2700 2    50   Input ~ 0
+VCC
+$Comp
+L Device:C_Small C1
+U 1 1 68348604
+P 7100 2800
+F 0 "C1" H 7192 2846 50  0000 L CNN
+F 1 "0.1uF" H 7192 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7100 2800 50  0001 C CNN
+F 3 "~" H 7100 2800 50  0001 C CNN
+	1    7100 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 2900 3    50   Input ~ 0
+GND
+Connection ~ 7100 2700
+Wire Wire Line
+	7100 2700 7300 2700
+Wire Wire Line
+	5750 2500 5250 2500
+Wire Wire Line
+	5250 2500 5250 2700
+Wire Wire Line
+	5250 2700 4700 2700
+Text Label 5250 2500 0    50   ~ 0
+VSYNK
+Wire Wire Line
+	6650 2700 7100 2700
+Wire Wire Line
+	4500 2700 4500 3050
+Wire Wire Line
+	4500 3050 5250 3050
+Wire Wire Line
+	5250 3050 5250 2900
+Wire Wire Line
+	5250 2900 5750 2900
+Text Label 5250 2900 0    50   ~ 0
+HSYNK
 $EndSCHEMATC
