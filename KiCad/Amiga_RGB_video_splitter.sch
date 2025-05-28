@@ -344,25 +344,25 @@ Wire Wire Line
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 68354B66
-P 5850 5000
-F 0 "RN2" H 6038 5046 50  0000 L CNN
-F 1 "R_Pack04 75 Ω" H 6038 4955 50  0000 L CNN
-F 2 "Amiga_RGB_video_splitter:RESCAF80P320X160X60-8N" V 6125 5000 50  0001 C CNN
-F 3 "~" H 5850 5000 50  0001 C CNN
-	1    5850 5000
+P 6300 4750
+F 0 "RN2" H 6488 4796 50  0000 L CNN
+F 1 "R_Pack04 75 Ω" H 6488 4705 50  0000 L CNN
+F 2 "Amiga_RGB_video_splitter:RESCAF80P320X160X60-8N" V 6575 4750 50  0001 C CNN
+F 3 "~" H 6300 4750 50  0001 C CNN
+	1    6300 4750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5650 4800 1    50   Input ~ 0
+Text GLabel 6100 4550 1    50   Input ~ 0
 BLUE
-Text GLabel 5750 4800 1    50   Input ~ 0
+Text GLabel 6200 4550 1    50   Input ~ 0
 GREEN
-Text GLabel 5850 4800 1    50   Input ~ 0
+Text GLabel 6300 4550 1    50   Input ~ 0
 RED
-Text GLabel 5650 5200 3    50   Output ~ 0
+Text GLabel 6100 4950 3    50   Output ~ 0
 VGA_B
-Text GLabel 5750 5200 3    50   Output ~ 0
+Text GLabel 6200 4950 3    50   Output ~ 0
 VGA_G
-Text GLabel 5850 5200 3    50   Output ~ 0
+Text GLabel 6300 4950 3    50   Output ~ 0
 VGA_R
 $Comp
 L Amiga_RGB_video_splitter:74HCT2G17 U2
@@ -404,13 +404,13 @@ Wire Wire Line
 Text Label 5250 2500 0    50   ~ 0
 VSYNK
 Wire Wire Line
-	6650 2700 7100 2700
+	6650 2700 7000 2700
 Wire Wire Line
 	5250 2900 5750 2900
 Text Label 5250 2900 0    50   ~ 0
 HSYNK
-NoConn ~ 5950 4800
-NoConn ~ 5950 5200
+NoConn ~ 6400 4550
+NoConn ~ 6400 4950
 $Comp
 L Device:CP_Small C1
 U 1 1 6834FAFC
@@ -444,7 +444,7 @@ L Connector_Generic:Conn_01x03 J5
 U 1 1 6835D390
 P 4400 5050
 F 0 "J5" V 4272 5230 50  0000 L CNN
-F 1 "Conn_01x03" V 4363 5230 50  0000 L CNN
+F 1 "MSS22D18 3Pin Slide Toggle Switch Pitch_2.5mm" V 4550 4650 50  0000 L CNN
 F 2 "Amiga_RGB_video_splitter:PinHeader_1x03_P2.5mm_Vertical" H 4400 5050 50  0001 C CNN
 F 3 "~" H 4400 5050 50  0001 C CNN
 	1    4400 5050
@@ -479,4 +479,111 @@ Wire Wire Line
 Wire Wire Line
 	4400 4600 4400 4700
 Connection ~ 4400 4700
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 6837A004
+P 7000 4050
+F 0 "J6" V 6872 4230 50  0000 L CNN
+F 1 "MSS22D18 3Pin Slide Toggle Switch Pitch_2.5mm" V 6963 4230 50  0000 L CNN
+F 2 "Amiga_RGB_video_splitter:PinHeader_1x03_P2.5mm_Vertical" H 7000 4050 50  0001 C CNN
+F 3 "~" H 7000 4050 50  0001 C CNN
+	1    7000 4050
+	0    1    1    0   
+$EndComp
+Text GLabel 7100 3850 1    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R3
+U 1 1 6837CDA8
+P 7000 3400
+F 0 "R3" H 7059 3446 50  0000 L CNN
+F 1 "10k" H 7059 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7000 3400 50  0001 C CNN
+F 3 "~" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3300 7000 2700
+Connection ~ 7000 2700
+Wire Wire Line
+	7000 2700 7100 2700
+Wire Wire Line
+	7000 3500 7000 3550
+$Comp
+L Amiga_RGB_video_splitter:74HCT2G14 U3
+U 1 1 6838826B
+P 8650 3350
+F 0 "U3" H 8650 3865 50  0000 C CNN
+F 1 "74HCT2G14" H 8650 3774 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9150 4300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G14.pdf" H 9150 4300 50  0001 C CNN
+	1    8650 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 3350 0    50   Input ~ 0
+GND
+Text GLabel 9950 3350 2    50   Input ~ 0
+VCC
+NoConn ~ 6900 3850
+$Comp
+L Device:R_Small R4
+U 1 1 68395832
+P 7500 3550
+F 0 "R4" H 7559 3596 50  0000 L CNN
+F 1 "10k" H 7559 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 7500 3550 50  0001 C CNN
+F 3 "~" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 683963DB
+P 9700 3450
+F 0 "C4" H 9792 3496 50  0000 L CNN
+F 1 "0.1uF" H 9792 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9700 3450 50  0001 C CNN
+F 3 "~" H 9700 3450 50  0001 C CNN
+	1    9700 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 3550 3    50   Input ~ 0
+GND
+Wire Wire Line
+	9950 3350 9700 3350
+Connection ~ 9700 3350
+$Comp
+L Device:C_Small C5
+U 1 1 6839C207
+P 7850 3650
+F 0 "C5" H 7942 3696 50  0000 L CNN
+F 1 "0.1uF" H 7942 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7850 3650 50  0001 C CNN
+F 3 "~" H 7850 3650 50  0001 C CNN
+	1    7850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3550 7000 3550
+Connection ~ 7000 3550
+Wire Wire Line
+	7000 3550 7000 3850
+Wire Wire Line
+	7600 3550 7850 3550
+Connection ~ 7850 3550
+Wire Wire Line
+	7850 3550 8200 3550
+Wire Wire Line
+	7100 3850 7850 3850
+Wire Wire Line
+	7850 3850 7850 3750
+Text GLabel 9100 3550 2    50   Output ~ 0
+XCLKEN
+Wire Wire Line
+	9100 3350 9700 3350
+Text GLabel 8200 3150 0    50   Input ~ 0
+XCLKEN
+Text GLabel 9100 3150 2    50   Output ~ 0
+OE
 $EndSCHEMATC
