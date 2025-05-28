@@ -270,7 +270,7 @@ Wire Wire Line
 	3550 5600 3650 5600
 NoConn ~ 2400 4350
 NoConn ~ 3800 4350
-Text GLabel 4350 4150 2    50   Input ~ 0
+Text GLabel 4400 4150 1    50   Input ~ 0
 VCC
 $Comp
 L Device:C_Small C3
@@ -286,8 +286,6 @@ $EndComp
 Text GLabel 4150 4350 3    50   Input ~ 0
 GND
 Connection ~ 4150 4150
-Wire Wire Line
-	4150 4150 4350 4150
 NoConn ~ 3450 5600
 NoConn ~ 2850 5000
 NoConn ~ 3050 5000
@@ -298,7 +296,7 @@ L Device:R_Small R1
 U 1 1 68333376
 P 4300 3350
 F 0 "R1" H 4359 3396 50  0000 L CNN
-F 1 "R_Small" H 4359 3305 50  0000 L CNN
+F 1 "330" H 4359 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 4300 3350 50  0001 C CNN
 F 3 "~" H 4300 3350 50  0001 C CNN
 	1    4300 3350
@@ -339,8 +337,6 @@ CSYNC
 Wire Wire Line
 	2400 4250 2400 4150
 Connection ~ 2400 4150
-Text GLabel 3950 4250 3    50   Input ~ 0
-BYPASS
 Wire Wire Line
 	3800 4150 4150 4150
 Wire Wire Line
@@ -348,25 +344,25 @@ Wire Wire Line
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 68354B66
-P 4950 4800
-F 0 "RN2" H 5138 4846 50  0000 L CNN
-F 1 "R_Pack04 75 Ω" H 5138 4755 50  0000 L CNN
-F 2 "Amiga_RGB_video_splitter:RESCAF80P320X160X60-8N" V 5225 4800 50  0001 C CNN
-F 3 "~" H 4950 4800 50  0001 C CNN
-	1    4950 4800
+P 5850 5000
+F 0 "RN2" H 6038 5046 50  0000 L CNN
+F 1 "R_Pack04 75 Ω" H 6038 4955 50  0000 L CNN
+F 2 "Amiga_RGB_video_splitter:RESCAF80P320X160X60-8N" V 6125 5000 50  0001 C CNN
+F 3 "~" H 5850 5000 50  0001 C CNN
+	1    5850 5000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 4600 1    50   Input ~ 0
+Text GLabel 5650 4800 1    50   Input ~ 0
 BLUE
-Text GLabel 4850 4600 1    50   Input ~ 0
+Text GLabel 5750 4800 1    50   Input ~ 0
 GREEN
-Text GLabel 4950 4600 1    50   Input ~ 0
+Text GLabel 5850 4800 1    50   Input ~ 0
 RED
-Text GLabel 4750 5000 3    50   Output ~ 0
+Text GLabel 5650 5200 3    50   Output ~ 0
 VGA_B
-Text GLabel 4850 5000 3    50   Output ~ 0
+Text GLabel 5750 5200 3    50   Output ~ 0
 VGA_G
-Text GLabel 4950 5000 3    50   Output ~ 0
+Text GLabel 5850 5200 3    50   Output ~ 0
 VGA_R
 $Comp
 L Amiga_RGB_video_splitter:74HCT2G17 U2
@@ -413,8 +409,8 @@ Wire Wire Line
 	5250 2900 5750 2900
 Text Label 5250 2900 0    50   ~ 0
 HSYNK
-NoConn ~ 5050 4600
-NoConn ~ 5050 5000
+NoConn ~ 5950 4800
+NoConn ~ 5950 5200
 $Comp
 L Device:CP_Small C1
 U 1 1 6834FAFC
@@ -443,4 +439,44 @@ Wire Wire Line
 Connection ~ 4600 2850
 Wire Wire Line
 	4600 2850 4600 2950
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 6835D390
+P 4400 5050
+F 0 "J5" V 4272 5230 50  0000 L CNN
+F 1 "Conn_01x03" V 4363 5230 50  0000 L CNN
+F 2 "Amiga_RGB_video_splitter:PinHeader_1x03_P2.5mm_Vertical" H 4400 5050 50  0001 C CNN
+F 3 "~" H 4400 5050 50  0001 C CNN
+	1    4400 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 4250 3950 4700
+Wire Wire Line
+	3950 4700 4400 4700
+Wire Wire Line
+	4400 4700 4400 4850
+Text Label 4100 4700 0    50   ~ 0
+BYPASS
+Text GLabel 4500 4850 1    50   Input ~ 0
+GND
+NoConn ~ 4300 4850
+$Comp
+L Device:R_Small R2
+U 1 1 6836E687
+P 4400 4500
+F 0 "R2" H 4459 4546 50  0000 L CNN
+F 1 "10k" H 4459 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 4400 4500 50  0001 C CNN
+F 3 "~" H 4400 4500 50  0001 C CNN
+	1    4400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4150 4400 4150
+Wire Wire Line
+	4400 4150 4400 4400
+Wire Wire Line
+	4400 4600 4400 4700
+Connection ~ 4400 4700
 $EndSCHEMATC
