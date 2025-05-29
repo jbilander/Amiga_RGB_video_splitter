@@ -635,11 +635,40 @@ F 3 "~" H 5250 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 6500 5250 6150
+	5250 6500 5250 6300
 Wire Wire Line
 	5250 6150 5700 6150
 Wire Wire Line
 	5700 7050 5250 7050
 Wire Wire Line
-	5250 7050 5250 6700
+	5250 7050 5250 6900
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 683ED2B8
+P 4700 6600
+F 0 "Y1" V 4700 6650 50  0000 R CNN
+F 1 "CL=16pF" V 4850 6450 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm" H 4700 6600 50  0001 C CNN
+F 3 "~" H 4700 6600 50  0001 C CNN
+	1    4700 6600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4900 6600 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4700 6450 4700 6300
+Wire Wire Line
+	4700 6300 5250 6300
+Connection ~ 5250 6300
+Wire Wire Line
+	5250 6300 5250 6150
+Wire Wire Line
+	4700 6750 4700 6900
+Wire Wire Line
+	4700 6900 5250 6900
+Connection ~ 5250 6900
+Wire Wire Line
+	5250 6900 5250 6700
+Text GLabel 4500 6600 0    50   Input ~ 0
+GND
 $EndSCHEMATC
