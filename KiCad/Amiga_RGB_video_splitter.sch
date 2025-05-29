@@ -586,4 +586,41 @@ Text GLabel 8200 3150 0    50   Input ~ 0
 XCLKEN
 Text GLabel 9100 3150 2    50   Output ~ 0
 OE
+$Comp
+L Amiga_RGB_video_splitter:74LVC1GX04 U4
+U 1 1 683CA8F1
+P 9450 5250
+F 0 "U4" V 9404 5628 50  0000 L CNN
+F 1 "74LVC1GX04" V 9495 5628 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9950 6200 50  0001 C CNN
+F 3 "https://www.mouser.se/datasheet/2/916/74LVC1GX04-2937637.pdf" H 9950 6200 50  0001 C CNN
+	1    9450 5250
+	0    1    1    0   
+$EndComp
+Text GLabel 9450 4800 1    50   Input ~ 0
+GND
+Text GLabel 9450 6100 3    50   Input ~ 0
+VCC
+$Comp
+L Device:C_Small C6
+U 1 1 683CD4B5
+P 9350 5900
+F 0 "C6" V 9500 5650 50  0000 L CNN
+F 1 "0.1uF" V 9600 5650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9350 5900 50  0001 C CNN
+F 3 "~" H 9350 5900 50  0001 C CNN
+	1    9350 5900
+	0    1    1    0   
+$EndComp
+Text GLabel 9250 5900 0    50   Input ~ 0
+GND
+Wire Wire Line
+	9450 5700 9450 5900
+Connection ~ 9450 5900
+Wire Wire Line
+	9450 5900 9450 6100
+Text GLabel 9850 5700 2    50   Output ~ 0
+XCLK
+Wire Wire Line
+	9650 5700 9850 5700
 $EndSCHEMATC
