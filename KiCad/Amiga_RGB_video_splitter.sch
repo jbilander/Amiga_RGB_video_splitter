@@ -635,40 +635,92 @@ F 3 "~" H 5250 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 6500 5250 6300
-Wire Wire Line
 	5250 6150 5700 6150
 Wire Wire Line
 	5700 7050 5250 7050
-Wire Wire Line
-	5250 7050 5250 6900
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 683ED2B8
-P 4700 6600
-F 0 "Y1" V 4700 6650 50  0000 R CNN
-F 1 "CL=16pF" V 4850 6450 50  0000 R CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm" H 4700 6600 50  0001 C CNN
-F 3 "~" H 4700 6600 50  0001 C CNN
-	1    4700 6600
+P 4650 6600
+F 0 "Y1" V 4650 6650 50  0000 R CNN
+F 1 "CL=16pF" V 4800 6450 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm" H 4650 6600 50  0001 C CNN
+F 3 "~" H 4650 6600 50  0001 C CNN
+	1    4650 6600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4900 6600 2    50   Input ~ 0
+Text GLabel 4950 6600 2    50   Input ~ 0
 GND
 Wire Wire Line
-	4700 6450 4700 6300
+	4650 6450 4650 6300
 Wire Wire Line
-	4700 6300 5250 6300
+	4650 6750 4650 6900
+Text GLabel 4300 6600 0    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R6
+U 1 1 683F6DEA
+P 4950 6900
+F 0 "R6" V 5050 6850 50  0000 L CNN
+F 1 "1k" V 5150 6850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4950 6900 50  0001 C CNN
+F 3 "~" H 4950 6900 50  0001 C CNN
+	1    4950 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 6700 5250 6900
+Wire Wire Line
+	5250 6150 5250 6300
+Wire Wire Line
+	4650 6300 5250 6300
 Connection ~ 5250 6300
 Wire Wire Line
-	5250 6300 5250 6150
+	5250 6300 5250 6500
 Wire Wire Line
-	4700 6750 4700 6900
-Wire Wire Line
-	4700 6900 5250 6900
+	5050 6900 5250 6900
 Connection ~ 5250 6900
 Wire Wire Line
-	5250 6900 5250 6700
-Text GLabel 4500 6600 0    50   Input ~ 0
-GND
+	5250 6900 5250 7050
+Wire Wire Line
+	4850 6900 4650 6900
+$Comp
+L Device:C_Small C8
+U 1 1 68407AAC
+P 4450 6300
+F 0 "C8" V 4300 6200 50  0000 L CNN
+F 1 "32pF" V 4200 6200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4450 6300 50  0001 C CNN
+F 3 "~" H 4450 6300 50  0001 C CNN
+	1    4450 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 68409377
+P 4450 6900
+F 0 "C7" V 4600 6800 50  0000 L CNN
+F 1 "32pF" V 4700 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4450 6900 50  0001 C CNN
+F 3 "~" H 4450 6900 50  0001 C CNN
+	1    4450 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 6300 4650 6300
+Connection ~ 4650 6300
+Wire Wire Line
+	4550 6900 4650 6900
+Connection ~ 4650 6900
+Wire Wire Line
+	4950 6600 4850 6600
+Wire Wire Line
+	4350 6300 4350 6600
+Wire Wire Line
+	4450 6600 4350 6600
+Connection ~ 4350 6600
+Wire Wire Line
+	4350 6600 4350 6900
+Wire Wire Line
+	4350 6600 4300 6600
 $EndSCHEMATC
