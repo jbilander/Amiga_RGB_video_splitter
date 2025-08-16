@@ -13,6 +13,8 @@ U3 | 74HCT2G14 | TSOP-6_1.65x3.05mm_P0.95mm | [HCT2G14GV125](https://www.mouser.
 U4 | 74LVC1GX04GV X-TAL DRIVER | TSOP-6_1.65x3.05mm_P0.95mm | [LVC1GX04GV125](https://www.mouser.com/ProductDetail/771-LVC1GX04GV125)
 J1 | D-SUB DB23| DB23_Female-Connector | [Female 23 PIN DB23](https://www.aliexpress.com/item/1005007020706331.html)
 J2 | DSUB-15-HD | HD_Female_Horizontal | [VGA connector](https://www.aliexpress.com/item/1005007383371077.html)
+J3 | 9 Pin Mini Din Connector | Right Angle TH Mini Circular DIN Receptacle | [9pin Mini Din](https://www.aliexpress.com/item/1005005737270650.html)
+J4 | PJ-320A | DIP 3.5mm Headphone Audio Socket 4Pins Audio interface | [PJ-320A](https://www.aliexpress.com/item/4000661212458.html)
 Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
 
 ***
