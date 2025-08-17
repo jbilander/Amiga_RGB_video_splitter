@@ -17,7 +17,17 @@ J3 | 9 Pin Mini Din Connector | Right Angle TH Mini Circular DIN Receptacle | [9
 J4 | PJ-320A | DIP 3.5mm Headphone Audio Socket 4Pins Audio interface | [PJ-320A](https://www.aliexpress.com/item/4000661212458.html)
 J5 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 J6 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
+JP1 | Solder_Jumper | Solder Jumper with pin for a flylead back to switchable Agnus pin 41 (or its pad on motherboard, e.g. JP4 on A500 Rev.6A)
 Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
+
+***
+
+If you use jumper-wire from JP1-pin then you bridge it either with the left pad or the right pad depending on your setup:
+
+    1. Motherboard has PAL oscillator and Adapter has NTSC oscillator = bridge JP1-pin with XCLKEN-pad (PAD 1)
+    2. Motherboard has NTSC oscillator and Adapter has PAL oscillator = bridge JP1-pin with OE-pad (PAD 3)
+
+Please note, using a jumper-wire is completely optional, You can switch ECS Agnus in Early Startup menu or with software such as Degrader and then you only control the external XLCK-crystal enable or disable via the switch on the adaptor. However it can be more convenient to have both tasks controlled from one single switch, hence connecting a jumper-wire.
 
 ***
 
