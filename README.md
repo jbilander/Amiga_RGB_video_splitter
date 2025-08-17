@@ -32,12 +32,37 @@ Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://ww
 
 ***
 
+<a href="images/Amiga_RGB_video_splitter_pic1.png">
+<img src="images/Amiga_RGB_video_splitter_pic1.png" width="800" height="580">
+</a>
+
+***
+
 If you use jumper-wire from JP1-pin then you bridge it either with the left pad or the right pad depending on your setup:
 
     1. Motherboard has PAL oscillator and Adapter has NTSC oscillator = bridge JP1-pin with XCLKEN-pad (PAD 1)
     2. Motherboard has NTSC oscillator and Adapter has PAL oscillator = bridge JP1-pin with OE-pad (PAD 3)
 
 Please note, using a jumper-wire is completely optional, You can switch ECS Agnus in Early Startup menu or with software such as Degrader and then you only control the external XLCK-crystal enable or disable via the switch on the adaptor. However it can be more convenient to have both tasks controlled from one single switch, hence connecting a jumper-wire.
+
+***
+
+<a href="images/SEGA_Mega_Drive_2_SCART_lead_pic1.jpg">
+<img src="images/SEGA_Mega_Drive_2_SCART_lead_pic1.jpg" width="400" height="400">
+</a>
+<a href="images/SEGA_Mega_Drive_2_SCART_lead_wiring.jpg">
+<img src="images/SEGA_Mega_Drive_2_SCART_lead_wiring.jpg" width="400" height="400">
+</a>
+<br />
+<a href="images/SEGA_Mega_Drive_2_SCART_lead_pic2.jpg">
+<img src="images/SEGA_Mega_Drive_2_SCART_lead_pic2.jpg" width="400" height="300">
+</a>
+<a href="images/SEGA_Mega_Drive_2_SCART_lead_pic3.jpg">
+<img src="images/SEGA_Mega_Drive_2_SCART_lead_pic3.jpg" width="400" height="300">
+</a>
+
+Suitable SCART-lead to use with the adapter (originally for the SEGA Mega Drive 2, (Genesis 2) with AC coupling inside) <br />
+https://www.aliexpress.com/item/1005007360209844.html
 
 ***
 
