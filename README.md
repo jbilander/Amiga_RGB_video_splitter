@@ -18,6 +18,8 @@ J4 | PJ-320A | DIP 3.5mm Headphone Audio Socket 4Pins Audio interface | [PJ-320A
 J5 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 J6 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 JP1 | Solder_Jumper | Solder Jumper with pin for a flylead back to switchable Agnus pin 41 (or its pad on motherboard, e.g. JP4 on A500 Rev.6A)
+C1 | 100uF Radial Pitch_2.5mm | Capacitor TH Radial_D5.0mm_P2.50mm | e.g. <br />[ECA-1AM101](https://www.mouser.com/ProductDetail/667-ECE-A0JKA101I) <br />[ECE-A0JKA101I](https://www.mouser.com/ProductDetail/667-ECA-1AM101)
+C2-C6 | Ceramic Capacitor 0.1uF = 100nF | 0805 | e.g. [CL21B104KACNFNC](https://www.mouser.com/ProductDetail/187-CL21B104KACNFNC)
 Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
 
 ***
