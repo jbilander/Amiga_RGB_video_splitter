@@ -19,10 +19,16 @@ J4 | PJ-320A | DIP 3.5mm Headphone Audio Socket 4Pins Audio interface | [PJ-320A
 J5 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 J6 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 JP1 | Solder_Jumper | Solder Jumper with pin for a flylead back to switchable Agnus pin 41 (or its pad on motherboard, e.g. JP4 on A500 Rev.6A)
-C1 | 100uF Radial Pitch_2.5mm | Capacitor TH Radial_D5.0mm_P2.50mm | e.g. <br />[ECA-1AM101](https://www.mouser.com/ProductDetail/667-ECE-A0JKA101I) <br />[ECE-A0JKA101I](https://www.mouser.com/ProductDetail/667-ECA-1AM101)
+C1 | 100uF Radial Pitch_2.5mm | Capacitor TH Radial_D5.0mm_P2.50mm | e.g. <br />[ECA-1AM101](https://www.mouser.com/ProductDetail/667-ECE-A0JKA101I) <br />[ECE-A0JKA101I](https://www.mouser.com/ProductDetail/667-ECA-1AM101) <br />Bend down flush to board before soldering
 C2-C6 | Ceramic Capacitor 0.1uF = 100nF | 0805 | e.g. [CL21B104KACNFNC](https://www.mouser.com/ProductDetail/187-CL21B104KACNFNC)
-C7-C8 | Multilayer Ceramic Capacitors MLCC - 32pF | 0603 | [06031A320FAT2A ](https://www.mouser.com/ProductDetail/581-06031A320FAT2A) for oscillator circuit 
+C7-C8 | Multilayer Ceramic Capacitors MLCC - 32pF | 0603 | [06031A320FAT2A ](https://www.mouser.com/ProductDetail/581-06031A320FAT2A) for oscillator circuit
+RN1-RN2 | 75 Ω RES ARRAY 4 Resistors | 1206 | [CAT16-75R0F4LF](https://www.mouser.com/ProductDetail/652-CAT16-75R0F4LF)
+R1 | 330 Ω | 1206 | Series resistor on C-sync line
+R2-R4 | 10k Ω | 1206  
+R5 | Resistor 2.2M Ω | 0603 | Resistor in oscillator-circuit
+R6 | Resistor 1k Ω | 0603 | Resistor in oscillator-circuit
 Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
+4 x PinHeader | PinHeader Board Weight/Level Support | 3-pin 2.54 mm pitch single row | Move the plastic guard to leave ~7.5 mm of pin before soldering in order to hold board in perfect level inside the housing
 
 ***
 
