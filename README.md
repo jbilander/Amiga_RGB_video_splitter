@@ -15,6 +15,8 @@ J1 | D-SUB DB23| DB23_Female-Connector | [Female 23 PIN DB23](https://www.aliexp
 J2 | DSUB-15-HD | HD_Female_Horizontal | [VGA connector](https://www.aliexpress.com/item/1005007383371077.html)
 J3 | 9 Pin Mini Din Connector | Right Angle TH Mini Circular DIN Receptacle | [9pin Mini Din](https://www.aliexpress.com/item/1005005737270650.html)
 J4 | PJ-320A | DIP 3.5mm Headphone Audio Socket 4Pins Audio interface | [PJ-320A](https://www.aliexpress.com/item/4000661212458.html)
+J5 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
+J6 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
 
 ***
