@@ -18,7 +18,8 @@ J3 | 9 Pin Mini Din Connector | Right Angle TH Mini Circular DIN Receptacle | [9
 J4 | PJ-320A | DIP 3.5mm Headphone Audio Socket 4Pins Audio interface | [PJ-320A](https://www.aliexpress.com/item/4000661212458.html)
 J5 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
 J6 | MSK12D19 | 3Pin Slide Toggle Switch Pitch_2.5mm | [MSK12D19 SMD](https://www.aliexpress.com/item/1005006482584650.html)
-JP1 | Solder_Jumper | Solder Jumper with pin for a flylead back to switchable Agnus pin 41 (or its pad on motherboard, e.g. JP4 on A500 Rev.6A)
+J7 | Right angle Single-Pin Header | 0.64 mm square pin angled | pin for a flylead back to switchable Agnus pin 41 (or its pad on motherboard, e.g. JP4 on A500 Rev.6A)
+JP1 | Solder_Jumper | | Solder Jumper for setting above pin (J7) to either /XCLKEN or OE-signal (inverted /XCLKEN signal).
 C1 | 100uF Radial Pitch_2.5mm | Capacitor TH Radial_D5.0mm_P2.50mm | e.g. <br />[ECA-1AM101](https://www.mouser.com/ProductDetail/667-ECE-A0JKA101I) <br />[ECE-A0JKA101I](https://www.mouser.com/ProductDetail/667-ECA-1AM101) <br />Bend down flush to board before soldering
 C2-C6 | Ceramic Capacitor 0.1uF = 100nF | 0805 | e.g. [CL21B104KACNFNC](https://www.mouser.com/ProductDetail/187-CL21B104KACNFNC)
 C7-C8 | Multilayer Ceramic Capacitors MLCC - 32pF | 0603 | [06031A320FAT2A ](https://www.mouser.com/ProductDetail/581-06031A320FAT2A) for oscillator circuit
