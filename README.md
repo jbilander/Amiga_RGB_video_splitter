@@ -1,8 +1,6 @@
 # Amiga_RGB_video_splitter
 Extend your amiga RGB video signal to two display units - screens, monitors, etc, simultaneously
 
-Work in progress
-
 BOM Rev. B
 ---------
 Reference  | Name/Value   | Package/Footprint | Notes
@@ -64,6 +62,45 @@ Please note, using a jumper-wire is completely optional, You can switch ECS Agnu
 
 Suitable SCART-lead to use with the adapter (originally for the SEGA Mega Drive 2, (Genesis 2) with AC coupling inside) <br />
 https://www.aliexpress.com/item/1005007360209844.html
+
+***
+
+<a href="images/Amiga_RGB_video_splitter_pic2.jpg">
+<img src="images/Amiga_RGB_video_splitter_pic2.jpg" width="256" height="192">
+</a>
+<a href="images/Amiga_RGB_video_splitter_pic3.jpg">
+<img src="images/Amiga_RGB_video_splitter_pic3.jpg" width="256" height="192">
+</a>
+<a href="images/Amiga_RGB_video_splitter_pic4.jpg">
+<img src="images/Amiga_RGB_video_splitter_pic4.jpg" width="256" height="192">
+</a>
+<br />
+<a href="images/Amiga_RGB_video_splitter_pic5.jpg">
+<img src="images/Amiga_RGB_video_splitter_pic5.jpg" width="256" height="192">
+</a>
+<a href="images/Amiga_RGB_video_splitter_pic6.jpg">
+<img src="images/Amiga_RGB_video_splitter_pic6.jpg" width="256" height="192">
+</a>
+<a href="images/Amiga_RGB_video_splitter_pic7.jpg">
+<img src="images/Amiga_RGB_video_splitter_pic7.jpg" width="256" height="192">
+</a>
+<br />
+<a href="images/Amiga_RGB_video_splitter_PCBs.jpg">
+<img src="images/Amiga_RGB_video_splitter_PCBs.jpg" width="386" height="290">
+</a>
+<a href="images/Jumper_wire_to_JP4_pad.jpg">
+<img src="images/Jumper_wire_to_JP4_pad.jpg" width="386" height="290">
+</a>
+<br />
+<a href="images/Amiga_RGB_video_splitter_filterOff.jpg">
+<img src="images/Amiga_RGB_video_splitter_filterOff.jpg" width="386" height="290">
+</a>
+<a href="images/Amiga_RGB_video_splitter_filterOn.jpg">
+<img src="images/Amiga_RGB_video_splitter_filterOn.jpg" width="386" height="290">
+</a>
+<br />
+Filter OFF vs. Filter ON<br />
+With the THS7374's filter activated you can clearly see that the vertical jailbars are gone (right picture).
 
 ***
 
