@@ -593,10 +593,8 @@ Wire Wire Line
 Connection ~ 5900 7350
 Wire Wire Line
 	5900 7350 5900 7550
-Text GLabel 6300 7150 2    50   Output ~ 0
+Text GLabel 6500 7150 2    50   Output ~ 0
 XCLK
-Wire Wire Line
-	6100 7150 6300 7150
 $Comp
 L Device:R_Small R5
 U 1 1 683E0C95
@@ -735,4 +733,19 @@ F 3 "~" H 8000 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8000 4950 8000 5150
+$Comp
+L Device:R_Small R7
+U 1 1 699199BB
+P 6300 7150
+F 0 "R7" V 6200 7100 50  0000 L CNN
+F 1 "150" V 6100 7050 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" H 6300 7150 50  0001 C CNN
+F 3 "~" H 6300 7150 50  0001 C CNN
+	1    6300 7150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 7150 6200 7150
+Wire Wire Line
+	6400 7150 6500 7150
 $EndSCHEMATC
