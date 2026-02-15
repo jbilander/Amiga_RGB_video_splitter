@@ -1,7 +1,7 @@
 # Amiga_RGB_video_splitter
 Extend your amiga RGB video signal to two display units - screens, monitors, etc, simultaneously
 
-BOM Rev. B
+BOM Rev. C
 ---------
 Reference  | Name/Value   | Package/Footprint | Notes
 -|-|-|-|
@@ -26,6 +26,7 @@ R1 | 330 Ω | 1206 | Series resistor on C-sync line
 R2-R4 | 10k Ω | 1206  
 R5 | Resistor 2.2M Ω | 0603 | Resistor in oscillator-circuit
 R6 | Resistor 1k Ω | 0603 | Resistor in oscillator-circuit
+R7 | Resistor 150 Ω | 1206 | Damping resistor for XCLK out to minimize reflections and ringing
 Housing | 2 x Plastic Shell Cover | For DB23/DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
 4 x PinHeader | PinHeader Board Weight/Level Support | 3-pin 2.54 mm pitch single row | Move the plastic guard to leave ~7.5 mm of pin before soldering in order to hold board in perfect level inside the housing
 
